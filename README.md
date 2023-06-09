@@ -123,12 +123,28 @@ Y= A⊕B
 5.	For different input combinations, generate the timing diagram.
 
 ## Program:
+~~~
+module exp1x(a,b,andgate,orgate,norgate,notgate,xorgate,xnorgate,nandgate);
+input a,b;
+output andgate,orgate,norgate,notgate,xorgate,xnorgate,nandgate;
+and (andgate,a,b);
+or (orgate,a,b);
+nor (norgate,a,b);
+not (notgate,a);
+xor (xorgate,a,b);
+nand (nandgate,a,b);
+xnor (xnorgate,a,b);
+endmodule 
+~~~
 
 
 ## RTL Schematic:
+![Screenshot_20230526_021209](https://github.com/Nandhakumar22008968/ex1final/assets/129037794/8832a78f-6096-442a-ac05-66dbf396d67b)
+
 
 
 ## Timing Diagram:
+![Screenshot_20230521_100834](https://github.com/Nandhakumar22008968/ex1final/assets/129037794/33e37a71-0ab1-494b-b833-5ba4da2c2012)
 
 
 
@@ -136,6 +152,5 @@ Y= A⊕B
 ## Result:
 
 Thus the different logic gates are implemented in Verilog HDL and the truth table are verified.
-
 
 
